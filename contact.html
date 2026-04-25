@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — CWDEV</title>
+  <meta name="description" content="Contactez CWDEV pour créer un site web moderne, rapide et optimisé SEO." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="brand" aria-label="CWDEV accueil">
+      <img src="assets/logo.png" alt="Logo CWDEV" />
+    </a>
+
+    <nav class="nav">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#processus">Processus</a>
+      <a href="index.html#resultats">Résultats</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="contact.html" class="btn btn-outline">Consultation gratuite</a>
+  </header>
+
+  <main class="contact-page">
+    <section class="contact-hero">
+      <p class="eyebrow">Contact</p>
+      <h1>Parlons de votre projet.</h1>
+      <p>
+        Vous voulez un site web propre, moderne et crédible ? Remplissez le formulaire,
+        je vous réponds rapidement avec une proposition claire.
+      </p>
+    </section>
+
+    <section class="contact-section">
+      <form 
+        class="contact-form" 
+        action="https://formspree.io/f/mlgavlav"
+        method="POST"
+      >
+        <div class="form-group">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Adresse courriel</label>
+          <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="business">Nom de l’entreprise</label>
+          <input type="text" id="business" name="business" placeholder="Nom de votre entreprise">
+        </div>
+
+        <div class="form-group">
+          <label for="service">Type de projet</label>
+          <select id="service" name="service" required>
+            <option value="">Choisir une option</option>
+            <option value="site-vitrine">Site vitrine</option>
+            <option value="refonte">Refonte de site</option>
+            <option value="seo">Optimisation SEO</option>
+            <option value="reservation">Site avec réservation</option>
+            <option value="autre">Autre</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="budget">Budget approximatif</label>
+          <select id="budget" name="budget">
+            <option value="">Choisir une option</option>
+            <option value="moins-1000">Moins de 1000$</option>
+            <option value="1000-2500">1000$ – 2500$</option>
+            <option value="2500-5000">2500$ – 5000$</option>
+            <option value="5000-plus">5000$ et plus</option>
+          </select>
+        </div>
+
+        <div class="form-group full">
+          <label for="message">Décrivez votre projet</label>
+          <textarea id="message" name="message" rows="6" placeholder="Parlez-moi de votre besoin, votre site actuel, vos objectifs..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="assets/logo-cwdev.png" alt="Logo CWDEV" />
+    <p>© 2026 CWDEV — Sites web sur mesure.</p>
+  </footer>
+
+</body>
+</html>
