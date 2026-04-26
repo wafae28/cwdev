@@ -1024,40 +1024,47 @@ html{
 /* mobile affichage */
 @media (max-width: 768px) {
 
-  .hero{
-    padding: 28px 5% 10px;
-    gap: 12px;
-  }
-
-  .hero h1{
-    margin-bottom: 10px;
-    line-height: 1.02;
-  }
-
-  .hero-text{
-    margin-bottom: 14px;
-  }
-
-  .hero-actions{
-    margin-top: 0;
-    margin-bottom: 0;
-    gap: 10px;
-  }
-
   .hero-visual,
   .hero-image,
-  .hero-mockup{
-    margin-top: -95px;
-    margin-bottom: -30px;
-    min-height: 520px;
+  .devices-mockup,
+  .hero-mockup {
+    margin-top: -120px;
     position: relative;
     z-index: 2;
   }
 
-  .hero-image img{
-    width: 115%;
-    max-width: none;
-    transform: translateY(-20px);
+}
+@media (max-width: 768px) {
+
+  .hero {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    gap: 18px;
+  }
+
+  .hero-content {
+    gap: 14px;
+  }
+
+  .hero h1 {
+    margin-bottom: 12px;
+    line-height: 1.02;
+  }
+
+  .hero p {
+    margin-bottom: 18px;
+    line-height: 1.45;
+  }
+
+  .hero-actions {
+    margin-top: 10px;
+    gap: 12px;
+  }
+
+  .hero-visual,
+  .hero-image,
+  .hero-mockup {
+    margin-top: -30px;
   }
 
 }
