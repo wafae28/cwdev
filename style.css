@@ -500,7 +500,7 @@ a{
   }
 
   .brand img{
-    height:44px;
+    height:85px;
   }
 
   .nav{
@@ -514,10 +514,45 @@ a{
 
   .hero{
     padding:48px 5% 60px;
+    display:flex;
+    flex-direction:column;
   }
 
-  .hero-actions,
+  .hero-content{
+    display:contents;
+  }
+
+  .eyebrow{
+    order:1;
+  }
+
+  .hero h1{
+    order:2;
+  }
+
+  .hero-text{
+    order:3;
+  }
+
+  .hero-actions{
+    order:4;
+    grid-template-columns:1fr;
+  }
+
+  .hero-image{
+    order:5;
+    justify-content:center;
+    margin:25px 0 10px;
+  }
+
+  .hero-image img{
+    width:100%;
+    max-width:520px;
+  }
+
   .stats{
+    order:6;
+    width:100%;
     grid-template-columns:1fr;
   }
 
