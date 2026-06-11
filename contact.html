@@ -52,6 +52,7 @@
         name="contact"
         method="POST"
         data-netlify="true"
+        action="/merci.html"
       >
         <input type="hidden" name="form-name" value="contact">
   
@@ -131,32 +132,6 @@
   <footer class="footer">
     <p>© 2026 CWDEV</p>
   </footer>
-  <script>
-    document.getElementById("contactForm").addEventListener("submit", async function(e) {
-        e.preventDefault();
-    
-        const form = e.target;
-        const data = new FormData(form);
-    
-        try {
-            const response = await fetch("https://formspree.io/f/mlgavlav", {
-                method: "POST",
-                body: data,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            });
-    
-            if (response.ok) {
-                window.location.href = "merci.html";
-            } else {
-                alert("Erreur lors de l'envoi.");
-            }
-    
-        } catch (error) {
-            alert("Connexion impossible.");
-        }
-    });
-    </script>
+
 </body>
 </html>
