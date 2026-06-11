@@ -44,24 +44,49 @@
         nous vous répondons rapidement avec une proposition claire.
       </p>
     </section>
-
+  
     <section class="contact-section">
-        <form class="contact-form" id="contactForm">
+      <form
+        class="contact-form"
+        id="contactForm"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+      >
+        <input type="hidden" name="form-name" value="contact">
+  
         <div class="form-group">
           <label for="name">Nom complet</label>
-          <input type="text" id="name" name="name" placeholder="Votre nom" required>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Votre nom"
+            required
+          >
         </div>
-
+  
         <div class="form-group">
           <label for="email">Adresse courriel</label>
-          <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="exemple@email.com"
+            required
+          >
         </div>
-
+  
         <div class="form-group">
           <label for="business">Nom de l’entreprise</label>
-          <input type="text" id="business" name="business" placeholder="Nom de votre entreprise">
+          <input
+            type="text"
+            id="business"
+            name="business"
+            placeholder="Nom de votre entreprise"
+          >
         </div>
-
+  
         <div class="form-group">
           <label for="service">Type de projet</label>
           <select id="service" name="service" required>
@@ -73,7 +98,7 @@
             <option value="autre">Autre</option>
           </select>
         </div>
-
+  
         <div class="form-group">
           <label for="budget">Budget approximatif</label>
           <select id="budget" name="budget">
@@ -84,13 +109,21 @@
             <option value="5000-plus">5000$ et plus</option>
           </select>
         </div>
-
+  
         <div class="form-group full">
           <label for="message">Décrivez votre projet</label>
-          <textarea id="message" name="message" rows="6" placeholder="Parlez-moi de votre besoin, votre site actuel, vos objectifs..." required></textarea>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Parlez-moi de votre besoin, votre site actuel, vos objectifs..."
+            required
+          ></textarea>
         </div>
-
-        <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+  
+        <button type="submit" class="btn btn-primary">
+          Envoyer la demande
+        </button>
       </form>
     </section>
   </main>
